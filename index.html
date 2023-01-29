@@ -6,28 +6,31 @@
         <title>Food order website</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/@media.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="@media.css">
         <script src="https://kit.fontawesome.com/0e79819f90.js"></script>
     </head>
     <body>
     <div id="Home">
         <div class="header">
-            <div class="hamburger">
-                <div class="lines line-top"></div>
-                <div class="lines line-mid"></div>
-                <div class="lines line-bottom"></div>
-            </div>
-            <div class="navbar">
-                <div class="full-menu">
-                    <ul class="menu-links">
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#food-menu">Menu</a></li>
-                        <li><a href="#Gallery">Our Gallery</a></li>
-                        <li><a href="#Reviews">Reviews</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                        <li><a href="#Order-list">Order</a></li>
-                    </ul>
+            <div class="nav-container">
+                <input type="checkbox" class="check" name="" id="">
+                <div class="hamburger-lines" id="hamburger" >
+                    <div class="lines line-top"></div>
+                    <div class="lines line-mid"></div>
+                    <div class="lines line-bottom"></div>
+                </div>
+                <div class="navbar" id="nav">
+                    <div class="full-menu" id="full-menu">
+                        <ul class="menu-links">
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#food-menu">Menu</a></li>
+                            <li><a href="#Gallery">Gallery</a></li>
+                            <li><a href="#Reviews">Reviews</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                            <li><a href="#Order-list" id="order-list">Order</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,110 +81,90 @@
         <div class="food-menu">
             <div class="food-details">
                 <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
+                    <img src="images/food burge 2.jpg" alt="">
                     <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
+                        <p class="caption">Stylish burger</p>
+                        <strong>$44.4</strong><input type="checkbox"  class="check-box" name="" id="check" ><p id="text" class="add">Add to order list</p>
                     </div>
                 </div>
                 <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
+                    <img src="images/food chicken.jpg" alt="">
                     <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
+                        <p class="caption">Chicken</p>
+                        <strong>$50.39</strong><input type="checkbox"  class="check-box" name="" id="check" ><p id="text" class="add">Add to order list</p>
                     </div>
                 </div>
                 <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
+                    <img src="images/food hotdog.jpg" alt="">
                     <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
+                        <p class="caption">Hotdog</p>
+                        <strong>$5.39</strong><input type="checkbox"  class="check-box" name="" id="check" ><p id="text" class="add">Add to order list</p>
                     </div>
                 </div>
                 <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
+                    <img src="images/food mutton.jpg" alt="">
                     <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
+                        <p class="caption">Mutton</p>
+                        <strong>$55.09</strong><input type="checkbox"  class="check-box" name="" id="check" ><p id="text" class="add">Add to order list</p>
                     </div>
                 </div>
                 <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
+                    <img src="images/food pilau.jpg" alt="">
                     <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
+                        <p class="caption">Modern Pilau</p>
+                        <strong>$25.00</strong><input type="checkbox"  class="check-box" name="" id="check" ><p id="text" class="add">Add to order list</p>
                     </div>
                 </div>
                 <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
+                    <img src="images/food pork.jpg" alt="">
                     <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
+                        <p class="caption">Expensive Pork</p>
+                        <strong>$60.22</strong><input type="checkbox"  class="check-box" name="" id="check" ><p id="text" class="add">Add to order list</p>
                     </div>
                 </div>
                 <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
+                    <img src="images/food pizzza 3.jpg" alt="">
                     <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
+                        <p class="caption">Pizza</p>
+                        <strong>$45.16</strong><input type="checkbox"  class="check-box" name="" id="check" ><p id="text" class="add">Add to order list</p>
                     </div>
                 </div>
                 <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
+                    <img src="images/food stylish burger.jpg" alt="">
                     <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
+                        <p class="caption">Packed Burgers</p>
+                        <strong>$100.66</strong><input type="checkbox"  class="check-box" name="" id="check" ><p id="text" class="add">Add to order list</p>
                     </div>
                 </div>
                 <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
+                    <img src="images/food githeri.jpg" alt="">
                     <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
+                        <p class="caption">Chicken</p>
+                        <strong>$12.01</strong><input type="checkbox"  class="check-box" name="" id="check" ><p id="text" class="add">Add to order list</p>
                     </div>
                 </div>
                 <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
+                    <img src="images/food stylish mutton.jpg" alt="">
                     <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
+                        <p class="caption">Classy Mutton</p>
+                        <strong>$36.00</strong><input type="checkbox"  class="check-box" name="" id="check" ><p id="text" class="add">Add to order list</p>
                     </div>
                 </div>
                 <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
+                    <img src="images/food pork 2.jpg" alt="">
                     <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
+                        <p class="caption">Another Level Pork</p>
+                        <strong>$70.9</strong><input type="checkbox"  class="check-box" name="" id="check" ><p id="text" class="add">Add to order list</p>
                     </div>
                 </div>
                 <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
+                    <img src="images/food chicken side.jpg" alt="">
                     <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
+                        <p class="caption">Roasted Chicken</p>
+                        <strong>$20.3</strong><input type="checkbox"  class="check-box" name="" id="check" ><p id="text" class="add">Add to order list</p>
                     </div>
                 </div>
-                <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
-                    <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
-                    </div>
-                </div>
-                <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
-                    <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
-                    </div>
-                </div>
-                <div class="food">
-                    <img src="images/food 1.jpg" alt="">
-                    <p class="caption">Stylish Delicious potatoes</p>
-                    <div class="buy">
-                        <strong>$44.450</strong><br><input type="checkbox" name="" id="">Add to order list
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -239,10 +222,11 @@
     <div class="contact-us">
         <div class="message">
             <h3>Leave us a Message</h3>
+            <form>
             <label>Type your message</label><br>
             <textarea placeholder="Leave a message"></textarea><br>
             <button type="submit">Leave a message</button>
-
+            </form>
         </div>
         
         <div class="Social">
@@ -286,6 +270,6 @@
         </div>
     </footer>
     
-    <script src="js/scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
