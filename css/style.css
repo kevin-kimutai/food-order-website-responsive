@@ -13,9 +13,8 @@ html{
     background-repeat: no-repeat;
     scroll-behavior: smooth;
     cursor: pointer;
-    overflow-x: hidden;
     color: #fff;
-    
+    overflow-x: hidden;
 }
 
 
@@ -29,22 +28,9 @@ html{
     top: 50px;
 }
 
-.hamburger{
-    position: absolute;
-    width: 1.5em;
-    height: 2em;
-    z-index: 1;
-}
-.lines{
-    width: 100%;
-    height: 3px;
-    margin: 5px 0;
-    background-color: #fff;
-
-
-}
 .navbar{
     position: relative;
+    bottom: 30px;
 }
 .full-menu ul {
     
@@ -68,12 +54,6 @@ html{
     transition-duration: 500ms;
     
 }
-
-
-
-
-
-
 
 #Home{
     position: relative;
@@ -148,7 +128,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 300px;
     margin-top: 150px;
 }
@@ -192,6 +172,7 @@ h1{
     justify-content: center;
     align-items: center;
     color: #005;
+    width: 100vw;
 }
 #Gallery {
     position: relative;
@@ -229,9 +210,10 @@ h1{
     color: #fff;
 }
 .food-menu{
-    width: 100%;
+    width: 100vw;
     background-image: url('images/food\ bg\ 4.jpg');
     background-size: cover;
+    background-position: center;
 }
 .food-details {
     display: grid;
@@ -239,7 +221,24 @@ h1{
     margin: 0 20px;
 
 }
-
+.food-details .check-box {
+    z-index: 10;
+}
+.buy{
+    display: block;
+}
+strong,
+.check-box{
+    display: block;
+}
+.check-box,
+#text {
+    display: inline;
+}
+.check-box{
+    cursor: pointer;
+    transition: transform 0.4s all ease-in-out;
+}
 .food{
     display: flex;
     flex-direction: column;
@@ -250,14 +249,15 @@ h1{
     margin: 10px 10px;
     background: #fff;
 }
+
 .food img {
     height: 150px;
     width: 150px;
     margin-top: 15px;
 }
 #Reviews{
+    width: 100vw;
     margin-top: 70px;
-    top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,8 +272,6 @@ h1{
     color: #000;
 }
 .customer-reviews {
-    left: 40px;
-    right: 40px;
     position: relative;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -285,24 +283,36 @@ h1{
         flex-direction: column;
         width: 200px;
         height: 230px;
-        margin: 10px 10px;
+        margin: 10px 50px;
         background: transparent;
+        align-items: center;
     }
 .customer img {
         height: 100px;
         width: 100px;
         border-radius: 50%;
         margin-top: 15px;
+        align-self: center;
     }
+.customer-name{
+    font-size: 1.7em;
+    font-weight: bolder;
+    align-self: center;
+}
+.comments {
+    margin-top: 10px;
+    width: 250px;
+}
+
 #Contact {
     margin-top: 70px;
   display: flex;
   flex-direction: column;
-  background: gray;
+box-shadow:inset 0 2000px rgba(522, 555, 255, 675);
   color: #000;
   height: 330px;
+  width: 100vw;
 align-items: center;
-
 }
 #Contact h3 {
     margin-bottom: 20px;
@@ -319,14 +329,19 @@ align-items: center;
     position: relative;
     right: 100px;
 }
-.message textarea{
+form textarea{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 227px;
-    height: 100px;
     background: transparent;
+    color: #000;
+    height: 100px;
     border: none;
     border-radius: 5px;
+}
+input,
+textarea:focus{
+    outline: none;
 }
 .message button{
     display: inline;
@@ -346,10 +361,14 @@ align-items: center;
     display: block;
     font-size: 20px;
 }
+.back-top{
+    width: 100vw;
+}
 footer{
     display: flex;
     flex-direction: column;
     background: #004;
+    width: 100vw;
 }
 #Order-list{
     position: absolute;
@@ -362,9 +381,7 @@ footer{
     margin: 0  50vw;
     opacity: 0;
 }
-#Order-list:active{
-    opacity: 1;
-}
+
 .back-top {
     display: flex;
     background: #005;
